@@ -7,6 +7,12 @@
 <div>
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
         <dd>
@@ -39,6 +45,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" class="btn btn-default" asp-rout-id="@Model.Id">Edit</a>
+    <a asp-action="Edit" class="btn btn-default" asp-route-id="@Model.Id">Edit</a>
     <a asp-action="Index" class="btn btn-default">Back to list</a>
 </div>
